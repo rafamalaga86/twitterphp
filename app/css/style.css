@@ -1,0 +1,42 @@
+
+/* Twitter Icon Font */
+
+@font-face {
+    font-family: 'rosettaicons';
+    src: url('../fonts/rosettaiconsRegular.eot');
+    src: url('../fonts/rosettaiconsRegular.eot') format('embedded-opentype'),
+         url('../fonts/rosettaiconsRegular.woff2') format('woff2'),
+         url('../fonts/rosettaiconsRegular.woff') format('woff'),
+         url('../fonts/rosettaiconsRegular.ttf') format('truetype'),
+         url('../fonts/rosettaiconsRegular.svg#rosettaiconsRegular') format('svg');
+}
+
+
+.icon {
+	background: transparent;
+	display: inline-block;
+	font-style: normal;
+	vertical-align: baseline;
+}
+
+.icon:before {
+	display: block;
+	font-family: "rosettaicons";
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.icon--reply:before {
+	content: "\f151";
+}
+
+.icon--retweet:before {
+	content: "\f152";
+}
+
+.icon--favorite:before {
+	content: "\f147";
+}

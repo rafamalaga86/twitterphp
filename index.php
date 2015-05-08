@@ -14,5 +14,7 @@ require_once('app/Twitterphp.php');
 
 $connection = new TwitterPHP($settings);
 
-$connection->getStatuses();
+$tweets = $connection->getStatuses();
+
+var_dump($tweets);
 
