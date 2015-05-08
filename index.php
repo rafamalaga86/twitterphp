@@ -10,7 +10,7 @@ $settings = array(
     'consumer_secret' => "h5xp4MKIRv9BT6I4pHFQ5X7ltEdLErtFlN3Gg7zbOZHBJROdOK"
 );
 
-require_once('twitterphp.php');
+require_once('app/Twitterphp.php');
 
 $connection = new TwitterPHP($settings);
 
