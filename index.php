@@ -16,5 +16,5 @@ $connection = new TwitterPHP($settings);
 
 $tweets = $connection->getStatuses();
 
-var_dump($tweets);
+var_dump($tweets[0]['text']);
 

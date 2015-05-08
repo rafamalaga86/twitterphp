@@ -10,4 +10,6 @@ Comments.
 
 There is not model, view and controllers folder.
 
-Dependencies are not included in the repository, they should be installed with Composer. 
+Dependencies are not included in the repository, they should be installed with Composer.
+
+Using twig in templates.

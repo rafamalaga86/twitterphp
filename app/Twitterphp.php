@@ -23,7 +23,7 @@ class TwitterPHP {
 			               ->buildOauth($this->url, $this->requestMethod)
 			               ->performRequest();
 
-		return json_decode($request);
+		return json_decode($request, true);
 	}
 
 	public function storeStatuses() {
