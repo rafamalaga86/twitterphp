@@ -1,4 +1,4 @@
-<?php var_dump($tweets) ?>
+<?php var_dump($vars) ?>
 <!DOCTYPE html>
 <html lang="en">
 
