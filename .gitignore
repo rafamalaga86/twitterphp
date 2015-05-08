@@ -1,3 +1,5 @@
+vendor/
+error_log
 twitterphp.sublime-project
 twitterphp.sublime-workspace
 .DS_Store
