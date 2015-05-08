@@ -9,3 +9,5 @@ The packages of Composer are already in the proper folder, so no need to install
 Comments.
 
 There is not model, view and controllers folder.
+
+Dependencies are not included in the repository, they should be installed with Composer.
