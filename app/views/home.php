@@ -1,3 +1,4 @@
+<?php var_dump($tweets) ?>
 <!DOCTYPE html>
 <html lang="en">
 

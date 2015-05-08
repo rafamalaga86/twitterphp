@@ -11,10 +11,13 @@ $settings = array(
 );
 
 require_once('app/Twitterphp.php');
+require_once('app/lib/View.php');
 
 $connection = new TwitterPHP($settings);
 
 $tweets = $connection->getStatuses();
 
-var_dump($tweets[0]['text']);
+
+View::make('app/views/home.php', $tweets);
+
 
