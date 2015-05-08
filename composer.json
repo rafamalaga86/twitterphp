@@ -1,0 +1,13 @@
+{
+    "name": "Rafael/phptest",
+    "description": "PHP Test with Twitter API",
+    "authors": [
+        {
+            "name": "rafamalaga86",
+            "email": "rafamalaga86@gmail.com"
+        }
+    ],
+    "require": {
+    	"j7mbo/twitter-api-php": "dev-master"
+    }
+}
