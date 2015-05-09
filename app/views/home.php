@@ -56,19 +56,35 @@
     <!-- Page Content -->
     <div class="container">
         <!-- /.row -->
+        
+        <?php foreach ($tweets as $tweet): ?>
 
-        <div class="row">
-            <div class="col-lg-12 bg-success">
-                <div><p><span>Twitter API</span><span>@twitterapi</span><span>21 de abr</span></p></div>
-                <div><p class="lead">Thank you for your patience, media entities in the streaming API should be returning to normal.</p></div>
-                <div class="action-row">
-                    <i class="icon icon--reply"></i>
-                    <i class="icon icon--retweet"></i>
-                    <i class="icon icon--favorite"></i>
+            <?php //var_dump($tweet); ?>
+            
+            <blockquote class="row twitter-tweet">
+                <div class="col-lg-12">
+                    <div><p class="lead"> <?= $tweet["text"] ?> </p></div>
+
+                    <div>
+                        <span> - </span>
+                        <span> <?= $tweet["user"]["name"] ?> </span>
+                        <span> (@<?= $tweet["user"]["screen_name"] ?> ) </span>
+                        <span> <?= $tweet["created_at"] ?> </span>
+                    </div>
+                    
+                    <div class="action-row">
+                        <i class="icon icon--reply"></i>
+                        <i class="icon icon--retweet"></i>
+                        <i class="icon icon--favorite"></i>
+                    </div>
+
                 </div>
-            </div>
-        </div>
+            </blockquote>
+
+        <?php endforeach; ?>
+
         <!-- /.row -->
+        <?php var_dump($tweets); ?>
 
 
     </div>

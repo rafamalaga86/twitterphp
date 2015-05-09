@@ -17,3 +17,5 @@ Using twig in templates.
 Tried to used best practices.
 
 Explain MVC.
+
+Everyone can access the PHP files.
