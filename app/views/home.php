@@ -1,4 +1,3 @@
-<?php var_dump($vars) ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,16 +12,8 @@
     <title>TwitterPHP</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
+    <link href="app/css/bootstrap.min.css" rel="stylesheet">
+    <link href="app/css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

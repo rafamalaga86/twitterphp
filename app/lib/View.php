@@ -4,7 +4,9 @@ class View {
 
 	public static function make($template, $vars) {
 
-		include("$template");
+		extract($vars);
+
+		include("app/views/$template.php");
 
 	}
 
