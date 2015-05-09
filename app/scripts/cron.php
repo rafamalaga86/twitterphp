@@ -10,8 +10,12 @@ $conn = new mysqli($server, $username, $password);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
-	echo "database created successfully";
+	echo "Connection stablished successfully";
 }
+
+
+
+
 
 // Create database
 // $sql = "CREATE DATABASE myDB";

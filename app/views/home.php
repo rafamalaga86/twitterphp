@@ -73,9 +73,9 @@
                     </div>
                     
                     <div class="action-row">
-                        <i class="icon icon--reply"></i>
-                        <i class="icon icon--retweet"></i>
-                        <i class="icon icon--favorite"></i>
+                        <a href=""><i class="icon icon--reply"></i></a>
+                        <a href="https://api.twitter.com/1.1/statuses/retweet/$tweet['id'].json"><i class="icon icon--retweet"></i></p>
+                        <a href="https://api.twitter.com/1.1/favorites/create.json"><i class="icon icon--favorite"></i></a>
                     </div>
 
                 </div>
