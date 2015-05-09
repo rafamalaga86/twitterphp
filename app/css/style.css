@@ -1,4 +1,21 @@
 
+/* General CSS */
+
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Twitter Icon Font */
 
 @font-face {
@@ -39,11 +56,4 @@
 
 .icon--favorite:before {
 	content: "\f147";
-}
-
-/* General CSS */
-
-body {
-    padding-top: 70px;
-    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }

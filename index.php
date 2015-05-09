@@ -18,6 +18,6 @@ $connection = new TwitterPHP($settings);
 $tweets = $connection->getStatuses();
 
 
-View::make('home', [$tweets]);
+View::make('home', ['tweets' => $tweets]);
 
 
