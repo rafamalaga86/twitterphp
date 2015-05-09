@@ -10,10 +10,14 @@ $settings = array(
     'consumer_secret' => "h5xp4MKIRv9BT6I4pHFQ5X7ltEdLErtFlN3Gg7zbOZHBJROdOK"
 );
 
+$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+$getfield = '?screen_name=twitterapi&count=5';
+$requestMethod = 'GET';
+
 require_once('app/Twitterphp.php');
 require_once('app/lib/View.php');
 
-$connection = new TwitterPHP($settings);
+$connection = new TwitterPHP($settings, $url, $getfield, $requestMethod);
 
 $tweets = $connection->getStatuses();
 

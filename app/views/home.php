@@ -74,7 +74,7 @@
                     
                     <div class="action-row">
                         <a href=""><i class="icon icon--reply"></i></a>
-                        <a href="https://api.twitter.com/1.1/statuses/retweet/$tweet['id'].json"><i class="icon icon--retweet"></i></p>
+                        <a href="https://api.twitter.com/1.1/statuses/retweet/<?= $tweet["id"] ?>.json"><i class="icon icon--retweet"></i></p>
                         <a href="https://api.twitter.com/1.1/favorites/create.json"><i class="icon icon--favorite"></i></a>
                     </div>
 
@@ -84,7 +84,7 @@
         <?php endforeach; ?>
 
         <!-- /.row -->
-        <?php var_dump($tweets); ?>
+        <?php var_dump($tweets[0]); ?>
 
 
     </div>

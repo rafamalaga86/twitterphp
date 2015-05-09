@@ -7,11 +7,13 @@ class TwitterPHP {
 	protected $requestMethod = 'GET';
 	protected $settings;
 
-	public function __construct($settings){
+
+	public function __construct($settings, $url, $getfield, $requestMethod){
 		$this->settings = $settings;
+		$this->url = $url;
+		$this->getfield = $getfield;
+		$this->requestMethod = $requestMethod;
 	}
-
-
 
 	public function getStatuses() {
 
