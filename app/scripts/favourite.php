@@ -15,7 +15,9 @@ if ($is_on){
 	$response = $request->postFavouriteOn($id);
 }
 
+var_dump($response);
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+
+// header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 
