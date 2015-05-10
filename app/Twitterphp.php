@@ -50,7 +50,7 @@ class TwitterPHP {
 
 			foreach ( $tweet as $key => $value ):
 
-				$$key = $value;
+				$$key = $conn->real_escape_string($value);
 
 			endforeach;
 
@@ -58,23 +58,6 @@ class TwitterPHP {
 			$created_at_processed = date("Y-m-d H:i:s", $datetime);
 
 			echo "<br><br><br><br><br><br>WOWOWOWOWO: $created_at_processed<br><br><br><br><br><br>";
-
-			print_r(				
-				$created_at_processed."<br>".
-				$user["name"]."<br>".
-				$user["screen_name"]."<br>".
-				$id_str."<br>". 
-				$text."<br>". 
-				$source."<br>".
-				$truncated."<br>".
-				$in_reply_to_status_id_str."<br>".
-				$in_reply_to_user_id_str."<br>".
-				$in_reply_to_screen_name."<br>".
-				$favorited."<br>".
-				$retweeted."<br>".
-				$possibly_sensitive."<br>".
-				$lang."<br>"
-			);
 
 
 			$sql = "INSERT IGNORE INTO tweets (
