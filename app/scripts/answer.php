@@ -16,6 +16,8 @@ $status = $_POST['status'];
 $response = $request->postAnswer($status, $id);
 
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+var_dump($response);
+
+// header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 
