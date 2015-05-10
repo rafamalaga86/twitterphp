@@ -12,8 +12,8 @@
     <title>eKomi Twitter</title>
 
     <!-- CSS -->
-    <link href="app/css/bootstrap.min.css" rel="stylesheet">
-    <link href="app/css/style.css" rel="stylesheet">
+    <link href="app/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="app/public/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -22,6 +22,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
+                <!-- <img src=".."> -->
                 <a class="navbar-brand" href="#">eKomi Twitter</a>
 
             <!-- Brand and toggle get grouped for better mobile display -->
