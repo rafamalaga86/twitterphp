@@ -38,8 +38,7 @@ require_once('app/Twitterphp.php');
 
 	var_dump($tweets);
 
-	// $tweets->free();
-	$sql->free();
+	$result->free_result();
 	$conn->close();
 
 
