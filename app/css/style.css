@@ -101,5 +101,5 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
 }
 
 .action-link:first-child{
-  padding: 0;
+  padding: 0; 
 }
