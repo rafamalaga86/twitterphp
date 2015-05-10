@@ -88,7 +88,7 @@ blockquote.twitter-tweet {
   vertical-align: top;
   padding: 16px;
   margin: 10px 0;
-  max-width: 468px;
+  max-width: 450px;
   border: #ddd 1px solid;
   border-top-color: #eee;
   border-bottom-color: #bbb;
@@ -129,4 +129,8 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
 
 .action-link:first-child{
   padding: 0; 
+}
+
+.container{ /* Temporal fix */
+  width: auto !important;
 }
