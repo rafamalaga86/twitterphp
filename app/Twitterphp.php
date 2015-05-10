@@ -42,6 +42,8 @@ class TwitterPHP {
 			echo "Connection stablished successfully <br><br>";
 		}
 
+		echo "PETER: ".gettype("sdaf");
+
 		foreach ( $tweets as $tweet ):
 
 			var_dump($tweet);
