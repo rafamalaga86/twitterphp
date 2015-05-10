@@ -57,7 +57,7 @@ class TwitterPHP {
 			$datetime = strtotime($created_at);
 			$created_at_processed = date("Y-m-d H:i:s", $datetime);
 
-			echo "<br><br><br><br><br><br>WOWOWOWOWO: $timestamp<br><br><br><br><br><br>";
+			echo "<br><br><br><br><br><br>WOWOWOWOWO: $created_at_processed<br><br><br><br><br><br>";
 
 
 			$sql = "INSERT IGNORE INTO tweets (
