@@ -163,7 +163,7 @@ class TwitterPHP {
 			$result2 = $result->current_field;
 			var_dump($result);
 
-			echo "<br><br>"
+			echo "<br><br>";
 
 			$conn->close();
 		}
