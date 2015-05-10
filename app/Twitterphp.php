@@ -108,7 +108,7 @@ class TwitterPHP {
 		}
 	}
 
-	public function queryStatuses(){
+	public function queryStatuses() {
 
 		// Database details
 		require_once('app/config/database.php');
@@ -143,7 +143,7 @@ class TwitterPHP {
 		}
 	}
 
-	public function isFavouriteOn($id){
+	public function isFavouriteOn($id) {
 
 		// Alter the field of favourite in the DB
 		require('../config/database.php');
@@ -169,7 +169,7 @@ class TwitterPHP {
 
 
 
-	public function postFavouriteOn($id){ 
+	public function postFavouriteOn($id) { 
 
 		// Post the favourite to facebook
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
@@ -210,7 +210,7 @@ class TwitterPHP {
 
 	}
 
-	public function postFavouriteOff($id){
+	public function postFavouriteOff($id) {
 
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
 
@@ -245,6 +245,47 @@ class TwitterPHP {
 
 		return $response;
 
+	}
+
+
+	public function postRetweet($id) {
+
+		// Post the favourite to facebook
+		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
+
+		$url = 'https://api.twitter.com/1.1/statuses/retweet/$id.json';
+		$requestMethod = 'POST';
+
+		$postfields = [ 'id' => $id ];
+
+		$twitter = new TwitterAPIExchange($this->settings);
+
+		$response = $twitter->buildOauth($url, $requestMethod)
+							->setPostfields($postfields)
+							->performRequest();
+
+
+
+
+		// Alter the field of favourite in the DB
+		require('../config/database.php');
+
+		// Create connection
+		$conn = new mysqli($server, $username, $password, $database);
+
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Connection failed: " . $conn->connect_error);
+		} else {
+
+			$sql = "UPDATE tweets SET retweeted = '1' WHERE tt_id = '$id';";
+
+			$result = $conn->query($sql);
+
+			$conn->close();
+		}
+
+		return $response;
 	}
 
 
