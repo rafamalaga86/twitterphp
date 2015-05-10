@@ -22,8 +22,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-                <img src="../images/ekomi-logo.png">
-                <a class="navbar-brand" href="#">eKomi Twitter</a>
+            <img class="logo" src="app/public/images/ekomi-logo.png" width="45">
+            <a class="navbar-brand" href="#">eKomi Twitter</a>
 
             <!-- Brand and toggle get grouped for better mobile display -->
 
