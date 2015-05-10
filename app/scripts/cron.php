@@ -2,9 +2,17 @@
 
 require_once('../config/database.php');
 
+// Include details for the app to work
+require_once('../config/apidetails.php');
+require_once('../Twitterphp.php');
+
+$api_connection = new TwitterPHP($settings, $url, $getfield, $requestMethod);
+
+$tweets = $api_connection->getStatuses();
+
 
 // Create connection
-$conn = new mysqli($server, $username, $password);
+$conn = new mysqli($server, $username, $password, $database);
 
 // Check connection
 if ($conn->connect_error) {
