@@ -68,7 +68,7 @@
                     <div class="action-row">
                         <a class="action-link" href=""><i class="icon icon--reply"></i></a>
                         <a class="action-link" href="http://testing.clickcreacion.com/twitterphp/app/scripts/favourite.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--retweet"></i></p>
-                        <a class="action-link <?= isset($tweet['favorited']) ? 'on' : '' ?>" href="http://testing.clickcreacion.com/twitterphp/app/scripts/favourite.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--favorite"></i></a>
+                        <a class="action-link <?= isset($tweet['favorited']) && $tweet['favorited'] != 0 ? 'on' : '' ?>" href="http://testing.clickcreacion.com/twitterphp/app/scripts/favourite.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--favorite"></i></a>
                     </div>
 
                 </div>
