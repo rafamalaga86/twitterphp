@@ -59,9 +59,26 @@ class TwitterPHP {
 
 			echo "<br><br><br><br><br><br>WOWOWOWOWO: $created_at_processed<br><br><br><br><br><br>";
 
+			print_r(				
+				$created_at_processed."<br>".
+				$user["name"]."<br>".
+				$user["screen_name"]."<br>".
+				$id_str."<br>". 
+				$text."<br>". 
+				$source."<br>".
+				$truncated."<br>".
+				$in_reply_to_status_id_str."<br>".
+				$in_reply_to_user_id_str."<br>".
+				$in_reply_to_screen_name."<br>".
+				$favorited."<br>".
+				$retweeted."<br>".
+				$possibly_sensitive."<br>".
+				$lang."<br>"
+			);
+
 
 			$sql = "INSERT IGNORE INTO tweets (
-				-- created_at,
+				created_at,
 				name,
 				screen_name,
 				tt_id, 
@@ -78,7 +95,7 @@ class TwitterPHP {
 			)
 
 			VALUES (
-				-- '$created_at_processed',
+				'$created_at_processed',
 				'$user[name]',
 				'$user[screen_name]',
 				'$id_str', 
