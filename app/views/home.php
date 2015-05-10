@@ -22,7 +22,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-                <a class="navbar-brand" href="#">Twitter PHP</a>
+                <a class="navbar-brand" href="#">eKomi Twitter</a>
 
             <!-- Brand and toggle get grouped for better mobile display -->
 
@@ -66,7 +66,7 @@
                     
                     <div class="action-row">
                         <a class="action-link" href=""><i class="icon icon--reply"></i></a>
-                        <a class="action-link" href="http://testing.clickcreacion.com/twitterphp/app/scripts/favourite.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--retweet"></i></p>
+                        <a class="action-link pr" href="http://testing.clickcreacion.com/twitterphp/app/scripts/favourite.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--retweet"></i></p>
                         <a class="action-link" href="http://testing.clickcreacion.com/twitterphp/app/scripts/favourite.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--favorite"></i></a>
                     </div>
 
