@@ -61,7 +61,7 @@ class TwitterPHP {
 
 
 			$sql = "INSERT IGNORE INTO tweets (
-				created_at,
+				-- created_at,
 				name,
 				screen_name,
 				tt_id, 
@@ -78,7 +78,7 @@ class TwitterPHP {
 			)
 
 			VALUES (
-				'$created_at_processed',
+				-- '$created_at_processed',
 				'$user[name]',
 				'$user[screen_name]',
 				'$id_str', 
