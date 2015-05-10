@@ -267,7 +267,7 @@ class TwitterPHP {
 
 
 
-		// Alter the field of favourite in the DB
+		// Alter the field of favourite in the DB 
 		require('../config/database.php');
 
 		// Create connection
