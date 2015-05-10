@@ -91,6 +91,7 @@ blockquote.twitter-tweet {
   max-width: 450px;
   font: 14px/18px Helvetica, Arial, sans-serif;
   color: #000;
+  transition: background-color 0.2s;
 
   border: none;
 
@@ -101,6 +102,10 @@ blockquote.twitter-tweet {
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.15);
   */
+}
+
+blockquote.twitter-tweet:hover {
+  background-color: rgba(1,1,1,0.01);
 }
 
 blockquote.twitter-tweet p {
