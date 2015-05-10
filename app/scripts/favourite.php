@@ -8,6 +8,7 @@ $id = $_GET['id'];
 
 $is_on = $request->isFavouriteOn($id);
 
+echo $is_on;
 
 if ($is_on){
 	$response = $request->postFavouriteOff($id);
