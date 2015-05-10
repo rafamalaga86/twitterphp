@@ -142,31 +142,22 @@ class TwitterPHP {
 	}
 
 
-/*
+
 	public function postFavourite($id){
 
 		require_once('TwitterAPIExchange.php');
 
-		$settings = array(
-		    'oauth_access_token' => "YOUR_OAUTH_ACCESS_TOKEN",
-		    'oauth_access_token_secret' => "YOUR_OAUTH_ACCESS_TOKEN_SECRET",
-		    'consumer_key' => "YOUR_CONSUMER_KEY",
-		    'consumer_secret' => "YOUR_CONSUMER_SECRET"
-		);
-
-		$url = 'https://api.twitter.com/1.1/blocks/create.json';
+		$url = 'https://api.twitter.com/1.1/favorites/create.json';
 		$requestMethod = 'POST';
 
-		$postfields = array(
-		    'screen_name' => 'usernameToBlock', 
-		    'skip_status' => '1'
-		);
+		$postfields = [ 'id' => $id ];
 
-		$twitter = new TwitterAPIExchange($settings);
+		$twitter = new TwitterAPIExchange($this->settings);
+
 		echo $twitter->buildOauth($url, $requestMethod)
 					 ->setPostfields($postfields)
 					 ->performRequest();
-	}*/
+	}
 
 
 }
