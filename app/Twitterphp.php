@@ -154,11 +154,11 @@ class TwitterPHP {
 
 		$twitter = new TwitterAPIExchange($this->settings);
 
-		$twitter->buildOauth($url, $requestMethod)
-				->setPostfields($postfields)
-				->performRequest();
+		$response = $twitter->buildOauth($url, $requestMethod)
+							->setPostfields($postfields)
+							->performRequest();
 
-		return $twitter;
+		return $response;
 
 
 		/*
