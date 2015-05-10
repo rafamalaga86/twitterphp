@@ -88,4 +88,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
 
 .action-link{
   color: #186105;
+  display: inline-block;
+  line-height: 20px;
+  width: 20px;
 }
