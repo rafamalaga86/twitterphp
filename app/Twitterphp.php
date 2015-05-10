@@ -28,6 +28,8 @@ class TwitterPHP {
 	}
 
 	public function storeStatuses($tweets) {
+		
+		require_once('../config/database.php');
 
 		// Create connection
 		$conn = new mysqli($server, $username, $password, $database);
