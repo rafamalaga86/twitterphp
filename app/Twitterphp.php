@@ -54,7 +54,11 @@ class TwitterPHP {
 
 			endforeach;
 
-			echo "<br><br><br><br><br><br>WOWOWOWOWO: $created_at<br><br><br><br><br><br>";
+			$datetime = strtotime($created_at);
+			$created_at_processed = date("Y-m-d H:i:s", $datetime);
+
+			echo "<br><br><br><br><br><br>WOWOWOWOWO: $timestamp<br><br><br><br><br><br>";
+
 
 			$sql = "INSERT IGNORE INTO tweets (
 				created_at,
@@ -74,7 +78,7 @@ class TwitterPHP {
 			)
 
 			VALUES (
-				'$created_at',
+				'$created_at_processed',
 				'$user[name]',
 				'$user[screen_name]',
 				'$id_str', 
