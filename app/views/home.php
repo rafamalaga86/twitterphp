@@ -72,9 +72,14 @@
                     </div>
                     
                     <div class="action-row">
-                        <a href=""><i class="icon icon--reply"></i></a>
+                        <a href="#"><i class="icon icon--reply"></i></a>
                         <a href="https://api.twitter.com/1.1/statuses/retweet/<?= $tweet["id"] ?>.json"><i class="icon icon--retweet"></i></p>
-                        <a href="https://api.twitter.com/1.1/favorites/create.json"><i class="icon icon--favorite"></i></a>
+
+                        <form action="https://api.twitter.com/1.1/favorites/create.json" method="POST">
+                            <input type="text" class="hidden" name="id" value="<?= $tweet["tt_id"] ?>">
+                            <button type="submit"><i class="icon icon--favorite"></i></button>
+                        </form>
+
                     </div>
 
                 </div>
