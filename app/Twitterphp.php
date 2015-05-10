@@ -160,8 +160,6 @@ class TwitterPHP {
 
 			$result = $conn->query($sql)->current_field;
 
-			var_dump($result);
-
 			$conn->close();
 		}
 
