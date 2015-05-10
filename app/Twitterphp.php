@@ -132,6 +132,10 @@ class TwitterPHP {
 			$result->free_result();
 			$conn->close();
 
+			if ( ! isset($tweets)){
+				echo "There is no tweets in the DB";
+			}
+
 			return $tweets;
 		}
 	}
