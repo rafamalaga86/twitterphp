@@ -1,6 +1,9 @@
 
 /* ekomi green = #186105 */
 
+/* action buttons grayed out #ccd6dd */
+/* action buttons activated #ffac33 */
+
 /* General CSS */
 
 body {
@@ -53,11 +56,16 @@ body {
 }
 
 
+/****************  NAV BAR STYLE  ******************/
+
+.navbar-inverse{
+  background-color: #186105;
+  color: white;
+}
 
 
-/**********************************/
-/* TWEETS STYLE */
-/**********************************/
+
+/****************  TWEETS STYLE  ******************/
 
 
 blockquote.twitter-tweet {
@@ -91,13 +99,17 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
 }
 
 .action-link{
-  color: #186105;
+  color: #ccd6dd;
   display: inline-block;
   line-height: 20px;
   text-align: center;
   width: 35px;
   padding: 0 5px;
   font-size: 20px;
+}
+
+.action-link:active{
+  color: #ffac33;
 }
 
 .action-link:first-child{
