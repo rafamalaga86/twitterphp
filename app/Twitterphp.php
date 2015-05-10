@@ -288,6 +288,26 @@ class TwitterPHP {
 		return $response;
 	}
 
+	public function postAnswer($status, $in_reply_to_status_id) {
+		// Post the favourite to facebook
+		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
+
+		$url = "https://api.twitter.com/1.1/statuses/update.json";
+		$requestMethod = 'POST';
+
+		$postfields = [
+			'id' => $id,
+			
+		];
+
+		$twitter = new TwitterAPIExchange($this->settings);
+
+		$response = $twitter->buildOauth($url, $requestMethod)
+							->setPostfields($postfields)
+							->performRequest();
+
+		return $response;
+	}
 
 }
 

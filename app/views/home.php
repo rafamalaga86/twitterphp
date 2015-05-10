@@ -88,7 +88,8 @@
                 </div>
                 <form id="answer-tweet-form" action="">
                     <div class="modal-body">
-                            <textarea maxlength="140"></textarea>
+                            <textarea maxlength="140" name="status"></textarea>
+                            <input class="hidden" id="ttid" name="ttid" value="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

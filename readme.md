@@ -24,6 +24,8 @@ Limitations for not using a Framework.
 
 Serializing JSON
 
+Is not secure
+
 "ORDER by ID DESC LIMIT 50,5"
 
 Responsive
@@ -32,9 +34,16 @@ About the POST sent data: I would have make the POST sent data with JS, but it t
 
 About the design and the front-end in general: I would have done something more creative, but without Javascript I was kind of limited.
 
-Counters in the twitter icons
+
+The twitter account
 
 The commits name.
+
+Javascript
+
+Something more to do: 
+	- Counters in the twitter icons
+	- Add the images
 
 
 
