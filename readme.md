@@ -24,6 +24,8 @@ Limitations for not using a Framework.
 
 Serializing JSON
 
+Explain GIT.
+
 Is not secure
 
 "ORDER by ID DESC LIMIT 50,5"

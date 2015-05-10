@@ -93,7 +93,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" id="send-form">Answer</button>
+                        <button type="button submit" class="btn btn-primary" id="send-form">Answer</button>
                     </div>
                 </form>
             </div>
