@@ -42,19 +42,22 @@ class TwitterPHP {
 			echo "Connection stablished successfully <br><br>";
 		}
 
-		echo "PETER: ".gettype("sdaf");
-
-		foreach ( $tweets as $tweet ):
+		foreach ( $tweets as $tweet ){
 
 			var_dump($tweet);
 
 			echo "<br><br>";
 
-			foreach ( $tweet as $key => $value ):
+			foreach ( $tweet as $key => $value ){
 
-				$$key = $conn->real_escape_string($value);
+				$$key = $value;
 
-			endforeach;
+				if ('string' == gettype($value)){  // Escape it
+
+					$$key = $conn->real_escape_string($$key);
+
+				}
+			}
 
 			$datetime = strtotime($created_at);
 			$created_at_processed = date("Y-m-d H:i:s", $datetime);
@@ -103,7 +106,7 @@ class TwitterPHP {
 			    echo "<br><br>Error: " . $sql . "<br>" . $conn->error;
 			}
 
-		endforeach;
+		}
 
 		$conn->close();
 	}
