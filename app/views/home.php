@@ -86,7 +86,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
-                <form id="answer-tweet-form" action="">
+                <form id="answer-tweet-form" method="POST" action="">
                     <div class="modal-body">
                             <textarea maxlength="140" name="status"></textarea>
                             <input class="hidden" id="ttid" name="ttid" value="">
