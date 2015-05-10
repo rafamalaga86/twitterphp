@@ -253,7 +253,7 @@ class TwitterPHP {
 		// Post the favourite to facebook
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
 
-		$url = 'https://api.twitter.com/1.1/statuses/retweet/$id.json';
+		$url = "https://api.twitter.com/1.1/statuses/retweet/$id.json";
 		$requestMethod = 'POST';
 
 		var_dump($url);
