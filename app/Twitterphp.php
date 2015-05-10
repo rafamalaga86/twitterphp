@@ -185,7 +185,7 @@ class TwitterPHP {
 
 
 
-		return $response;
+		return $result;
 
 	}
 
@@ -222,7 +222,7 @@ class TwitterPHP {
 			$conn->close();
 		}
 
-		return $response;
+		return $result;
 
 	}
 
