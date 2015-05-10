@@ -23,3 +23,5 @@ Everyone can access the PHP files.
 Limitations for not using a Framework.
 
 Serializing JSON
+
+"ORDER by ID DESC LIMIT 50,5"

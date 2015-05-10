@@ -58,19 +58,16 @@
         <!-- /.row -->
 
 
-
         <?php foreach ($tweets as $tweet): ?>
 
-            <?php //var_dump($tweet); ?>
-            
             <blockquote class="row twitter-tweet">
                 <div class="col-lg-12">
                     <div><p class="lead"> <?= $tweet["text"] ?> </p></div>
 
                     <div>
                         <span> - </span>
-                        <span> <?= $tweet["user"]["name"] ?> </span>
-                        <span> (@<?= $tweet["user"]["screen_name"] ?> ) </span>
+                        <span> <?= $tweet["name"] ?> </span>
+                        <span> (@<?= $tweet["screen_name"] ?> ) </span>
                         <span> <?= $tweet["created_at"] ?> </span>
                     </div>
                     

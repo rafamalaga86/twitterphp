@@ -28,11 +28,17 @@ require_once('app/Twitterphp.php');
 
 	$sql = "SELECT * FROM tweets";
 
-	$tweets = mysqli_fetch_array($conn->query($sql));
+	$result = $conn->query($sql);
+
+	for ( $i=0 ; $row = $result->fetch_assoc() ; $i++){
+
+		$tweets[$i] = $row;
+
+	}
 
 	var_dump($tweets);
 
-
+	// $tweets->free();
 	$conn->close();
 
 
