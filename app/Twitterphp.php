@@ -156,7 +156,7 @@ class TwitterPHP {
 		    die("Connection failed: " . $conn->connect_error);
 		} else {
 
-			$sql = "SELECT favorited FROM tweets WHERE tt_id = '560523514248450049'";
+			$sql = "SELECT favorited FROM tweets WHERE tt_id = '$id'";
 
 			$result = $conn->query($sql)->fetch_row()[0];
 
