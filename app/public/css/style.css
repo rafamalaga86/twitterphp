@@ -101,6 +101,13 @@ body {
   border: none;
 }
 
+.modal-footer .btn-primary{
+  background-color: #186105;
+}
+
+.modal-footer .btn{
+  border-radius: 0;
+}
 
 /****************  TWEETS STYLE  ******************/
 
