@@ -12,8 +12,13 @@ body {
 }
 
 
+.container{
+  text-align: center;
+}
 
-/* Twitter Icon Font */
+
+
+/*********** Icon Font **********/
 
 @font-face {
     font-family: 'rosettaicons';
@@ -77,6 +82,7 @@ body {
 
 
 blockquote.twitter-tweet {
+  text-align: left;
   display: inline-block;
   vertical-align: top;
   padding: 16px;
