@@ -8,12 +8,12 @@ class TwitterPHP {
 		$this->settings = $settings;
 	}
 
-	public function getStatuses($number) {
+	public function getStatuses($screen_name, $number) {
 
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
 
 		$requestMethod = 'GET';
-		$getfield = '?screen_name=twitterapi&count='.$number;
+		$getfield = '?screen_name='. $screen_name .'&count='.$number;
 		$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
 
 
@@ -296,8 +296,8 @@ class TwitterPHP {
 		$requestMethod = 'POST';
 
 		$postfields = [
-			'in_reply_to_status_id' => $in_reply_to_status_id,
-			'status' => $status
+			'status' => $status,
+			'in_reply_to_status_id' => $in_reply_to_status_id
 		];
 
 		$twitter = new TwitterAPIExchange($this->settings);

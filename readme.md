@@ -32,6 +32,8 @@ Is not secure
 
 "ORDER by ID DESC LIMIT 50,5"
 
+Tell them where is the cron.php file.
+
 Responsive
 
 About the POST sent data: I would have make the POST sent data with JS, but it the Test said only HTML, CSS, PHP and MySQL was valid for the solution, so I didn't use it.
