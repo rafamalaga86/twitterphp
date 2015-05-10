@@ -147,7 +147,7 @@ class TwitterPHP {
 
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
 
-		$url = 'http://testing.clickcreacion.com/twitterphp/app/controllers/test.php';
+		$url = 'https://api.twitter.com/1.1/favorites/create.json';
 		$requestMethod = 'POST';
 
 		$postfields = [ 'id' => $id ];
