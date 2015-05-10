@@ -7,15 +7,15 @@ $request = new TwitterPHP($settings);
 $id = $_POST['ttid'];
 $status = $_POST['status'];
 
-var_dump($id);
+// var_dump($id);
 
-echo '<br><br><br>';
+// echo '<br><br><br>';
 
-var_dump($status);
+// var_dump($status);
 
-// $response = $request->postFavouriteOff($id);
+$response = $request->postAnswer($status, $id);
 
 
-// header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 

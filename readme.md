@@ -18,6 +18,8 @@ Tried to used best practices.
 
 Explain MVC.
 
+There is no controll in the form, I am not escaping the form.
+
 Everyone can access the PHP files.
 
 Limitations for not using a Framework.
