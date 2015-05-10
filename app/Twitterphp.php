@@ -143,7 +143,7 @@ class TwitterPHP {
 		}
 	}
 
-	public function isFavouriteOn(){
+	public function isFavouriteOn($id){
 
 		// Alter the field of favourite in the DB
 		require('../config/database.php');
