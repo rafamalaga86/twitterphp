@@ -2,11 +2,10 @@
 
 class TwitterPHP {
 
-	protected $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-	protected $getfield = '?screen_name=twitterapi&count=1';
-	protected $requestMethod = 'GET';
-	protected $settings;
-
+	private $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+	private $getfield = '?screen_name=twitterapi&count=1';
+	private $requestMethod = 'GET';
+	private $settings;
 
 	public function __construct($settings, $url, $getfield, $requestMethod){
 		$this->settings = $settings;
@@ -28,8 +27,68 @@ class TwitterPHP {
 		return json_decode($request, true);
 	}
 
-	public function storeStatuses() {
+	public function storeStatuses($tweets) {
 
+		// Create connection
+		$conn = new mysqli($server, $username, $password, $database);
+
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Connection failed: " . $conn->connect_error);
+		} else {
+			echo "Connection stablished successfully <br><br>";
+		}
+
+		foreach ( $tweets as $tweet ):
+
+			var_dump($tweet);
+
+			echo "<br><br>";
+
+			foreach ( $tweet as $key => $value ):
+
+				$$key = $value;
+
+			endforeach;
+
+			$sql = "INSERT IGNORE INTO tweets (
+				tt_id, 
+				text,
+				source,
+				truncated,
+				in_reply_to_status_id_str,
+				in_reply_to_user_id_str,
+				in_reply_to_screen_name,
+				favorited,
+				retweeted,
+				possibly_sensitive,
+				lang
+			)
+
+			VALUES (
+				'$id_str', 
+				'$text', 
+				'$source',
+				'$truncated',
+				'$in_reply_to_status_id_str',
+				'$in_reply_to_user_id_str',
+				'$in_reply_to_screen_name',
+				'$favorited',
+				'$retweeted',
+				'$possibly_sensitive',
+				'$lang'
+			)";
+
+
+			if ($conn->query($sql) === TRUE) {
+			    echo "<br><br>New record created successfully";
+			} else {
+			    echo "<br><br>Error: " . $sql . "<br>" . $conn->error;
+			}
+
+		endforeach;
+
+		$conn->close();
 	}
 
 }
