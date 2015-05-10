@@ -204,6 +204,24 @@ class TwitterPHP {
 							->setPostfields($postfields)
 							->performRequest();
 
+		// Alter the field of favourite in the DB
+		require_once('../config/database.php');
+
+		// Create connection
+		$conn = new mysqli($server, $username, $password, $database);
+
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Connection failed: " . $conn->connect_error);
+		} else {
+
+			$sql = "UPDATE tweets SET favorited = '0' WHERE id = '$id';";
+
+			$result = $conn->query($sql);
+
+			$conn->close();
+		}
+
 		return $response;
 
 	}
