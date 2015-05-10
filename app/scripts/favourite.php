@@ -10,13 +10,13 @@ $is_on = $request->isFavouriteOn($id);
 
 echo $is_on;
 
-if ($is_on){
-	$response = $request->postFavouriteOff($id);
-} else {
-	$response = $request->postFavouriteOn($id);
-}
+// if ($is_on){
+// 	$response = $request->postFavouriteOff($id);
+// } else {
+// 	$response = $request->postFavouriteOn($id);
+// }
 
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+// header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 
