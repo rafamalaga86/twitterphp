@@ -86,8 +86,7 @@ blockquote.twitter-tweet {
   text-align: left;
   display: inline-block;
   vertical-align: top;
-  padding: 16px;
-  margin: 10px 0;
+  padding: 26px 16px;
   max-width: 450px;
   font: 14px/18px Helvetica, Arial, sans-serif;
   color: #000;
@@ -127,6 +126,10 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   padding: 0 5px;
   font-size: 20px;
 }
+.action-link:hover{
+  color: #186105;
+}
+
 
 .action-link:active{
   color: #ffac33;
