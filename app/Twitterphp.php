@@ -161,16 +161,18 @@ class TwitterPHP {
 			$result = $conn->query($sql);
 
 			$result2 = $result->current_field;
+
+			echo "Result";
 			var_dump($result);
 
 			echo "<br><br>";
 
+			echo "Result2";
 			var_dump($result2);
 
 			$conn->close();
 		}
 
-		echo "ID: $id <br><br> Result: $result";
 
 		return $result;
 	}
