@@ -9,6 +9,6 @@ $id = $_GET['id'];
 $response = $request->postRetweet($id);
 
 
-// header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 
-var_dump($response);
+// var_dump($response);
