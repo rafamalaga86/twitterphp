@@ -1,9 +1,9 @@
 <?php
 
 $settings = array(
-    'oauth_access_token' => "1359745544-fbLmg2Mr7xXGANpp3eCkluUjcqQ4MpK1yur5zkP",
-    'oauth_access_token_secret' => "D6qEa4vn3ssef7BaZSfDnEOtLn21D2TUZ7b1DAbeMPzpX",
-    'consumer_key' => "Gy9GHvSKBKGtSndZgUfBwmzan",
-    'consumer_secret' => "h5xp4MKIRv9BT6I4pHFQ5X7ltEdLErtFlN3Gg7zbOZHBJROdOK"
+    'oauth_access_token' => "3245158443-g91wo4fzT8ywlfOzMuWZkwFcnxx0UZR6SlGFbih",
+    'oauth_access_token_secret' => "cyFsBfxlPeJm9T4LF86CKQbvjHQrCmz6fEuOsWpnPtA7A",
+    'consumer_key' => "MK0Rzj4dYQsW3S3w1pajsqtMR",
+    'consumer_secret' => "KVKKe4m2ycWyuyxMBpRCZ7EDerWvX6O5gFG5FMyJWdOqgd9blO"
 );
 
