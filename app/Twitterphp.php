@@ -179,7 +179,6 @@ class TwitterPHP {
 
 			$result = $conn->query($sql);
 
-			$result->free_result();
 			$conn->close();
 		}
 
