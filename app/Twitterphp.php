@@ -54,6 +54,8 @@ class TwitterPHP {
 
 			endforeach;
 
+			echo "<br><br><br><br><br><br>WOWOWOWOWO: $created_at<br><br><br><br><br><br>";
+
 			$sql = "INSERT IGNORE INTO tweets (
 				created_at,
 				name,
