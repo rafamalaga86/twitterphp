@@ -158,7 +158,7 @@ class TwitterPHP {
 
 			$sql = "SELECT favorited FROM tweets WHERE tt_id = '$id'";
 
-			$result = $conn->query($sql);
+			$result = $conn->query($sql)->current_field;
 
 			var_dump($result);
 
