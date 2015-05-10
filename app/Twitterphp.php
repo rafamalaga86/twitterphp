@@ -143,6 +143,29 @@ class TwitterPHP {
 		}
 	}
 
+	public function isOn(){
+
+		// Alter the field of favourite in the DB
+		require_once('../config/database.php');
+
+		// Create connection
+		$conn = new mysqli($server, $username, $password, $database);
+
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Connection failed: " . $conn->connect_error);
+		} else {
+
+			$sql = "SELECT favorited FROM tweets WHERE tt_id = '$id'";
+
+			$result = $conn->query($sql);
+
+			$conn->close();
+		}
+
+		return $result;
+	}
+
 
 
 	public function postFavouriteOn($id){ 

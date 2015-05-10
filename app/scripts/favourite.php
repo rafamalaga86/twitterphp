@@ -6,10 +6,15 @@ require_once('../Twitterphp.php');
 $request = new TwitterPHP($settings);
 $id = $_GET['id'];
 
+$is_on = $request->isFavouriteOn($id);
 
-$response = $request->postFavouriteOn($id);
+if ($is_on){
+	$response = $request->postFavouriteOff($id);
+} else {
+	$response = $request->postFavouriteOn($id);
+}
 
 
-var_dump($response);
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 
