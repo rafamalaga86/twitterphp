@@ -146,7 +146,7 @@ class TwitterPHP {
 	public function isFavouriteOn(){
 
 		// Alter the field of favourite in the DB
-		require_once('../config/database.php');
+		require('../config/database.php');
 
 		// Create connection
 		$conn = new mysqli($server, $username, $password, $database);
@@ -188,7 +188,7 @@ class TwitterPHP {
 
 
 		// Alter the field of favourite in the DB
-		require_once('../config/database.php');
+		require('../config/database.php');
 
 		// Create connection
 		$conn = new mysqli($server, $username, $password, $database);
@@ -225,7 +225,7 @@ class TwitterPHP {
 							->performRequest();
 
 		// Alter the field of favourite in the DB
-		require_once('../config/database.php');
+		require('../config/database.php');
 
 		// Create connection
 		$conn = new mysqli($server, $username, $password, $database);
