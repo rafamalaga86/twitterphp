@@ -8,4 +8,4 @@ $id = $_GET['id'];
 
 $response = $request->postFavourite($id);
 
-var_dump(json_decode($response));
+var_dump($response);
