@@ -4,24 +4,24 @@ class TwitterPHP {
 
 	private $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
 	private $getfield = '?screen_name=twitterapi&count=1';
-	private $requestMethod = 'GET';
 	private $settings;
 
-	public function __construct($settings, $url, $getfield, $requestMethod){
+	public function __construct($settings, $url, $getfield){
 		$this->settings = $settings;
 		$this->url = $url;
 		$this->getfield = $getfield;
-		$this->requestMethod = $requestMethod;
 	}
 
 	public function getStatuses() {
 
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
 
+		$requestMethod = 'GET';
+
 		$twitter = new TwitterAPIExchange($this->settings);
 
 		$request = $twitter->setGetfield($this->getfield)
-			               ->buildOauth($this->url, $this->requestMethod)
+			               ->buildOauth($this->url, $requestMethod)
 			               ->performRequest();
 
 		return json_decode($request, true);
@@ -135,13 +135,15 @@ class TwitterPHP {
 			if ( ! isset($tweets)){
 				echo "There is no tweets in the DB";
 
-				$tweets = false;
+				$tweets = NULL;
 			}
 
 			return $tweets;
 		}
 	}
 
+
+/*
 	public function postFavourite($id){
 
 		require_once('TwitterAPIExchange.php');
@@ -165,7 +167,7 @@ class TwitterPHP {
 		echo $twitter->buildOauth($url, $requestMethod)
 					 ->setPostfields($postfields)
 					 ->performRequest();
-		}
+	}*/
 
 
 }

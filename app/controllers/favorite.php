@@ -1,3 +1,3 @@
 <?php
 
-// $app = new TwitterPHP($settings, $url, $getfield, $requestMethod);
+// $app = new TwitterPHP($settings, $url, $getfield);

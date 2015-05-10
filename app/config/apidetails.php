@@ -9,4 +9,3 @@ $settings = array(
 
 $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
 $getfield = '?screen_name=twitterapi&count=10';
-$requestMethod = 'GET';
