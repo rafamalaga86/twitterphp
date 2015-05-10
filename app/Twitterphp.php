@@ -145,7 +145,7 @@ class TwitterPHP {
 
 
 
-	public function postFavouriteOn($id){
+	public function postFavouriteOn($id){ 
 
 		// Post the favourite to facebook
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
