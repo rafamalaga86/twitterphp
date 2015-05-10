@@ -56,7 +56,10 @@
     <!-- Page Content -->
     <div class="container">
         <!-- /.row -->
-        
+
+        <?php var_dump($tweets); ?>
+
+
         <?php foreach ($tweets as $tweet): ?>
 
             <?php //var_dump($tweet); ?>

@@ -13,7 +13,7 @@ require_once('app/Twitterphp.php');
 
 
 	// Database details
-	require_once('../config/database.php');
+	require_once('app/config/database.php');
 
 	// Create connection
 	$conn = new mysqli($server, $username, $password, $database);
@@ -28,7 +28,7 @@ require_once('app/Twitterphp.php');
 
 	$sql = "SELECT * FROM tweets";
 
-	$result = $conn->query($sql);
+	$tweets = $conn->query($sql);
 
 
 	$conn->close();
