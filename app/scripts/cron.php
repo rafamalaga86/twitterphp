@@ -10,6 +10,8 @@ $api_connection = new TwitterPHP($settings, $url, $getfield, $requestMethod);
 
 $tweets = $api_connection->getStatuses();
 
+var_dump($tweets);
+
 
 // Create connection
 $conn = new mysqli($server, $username, $password, $database);

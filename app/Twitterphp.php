@@ -3,7 +3,7 @@
 class TwitterPHP {
 
 	protected $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-	protected $getfield = '?screen_name=twitterapi&count=5';
+	protected $getfield = '?screen_name=twitterapi&count=1';
 	protected $requestMethod = 'GET';
 	protected $settings;
 
@@ -17,7 +17,7 @@ class TwitterPHP {
 
 	public function getStatuses() {
 
-		require_once('vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
+		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
 
 		$twitter = new TwitterAPIExchange($this->settings);
 
