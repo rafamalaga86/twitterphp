@@ -66,7 +66,7 @@
                     </div>
                     
                     <div class="action-row">
-                        <a class="action-link" href="#" data-toggle="modal" data-target="#myModal"><i class="icon icon--reply"></i></a>
+                        <a class="action-link answer-button" href="#" data-toggle="modal" data-target="#myModal" data-ttid="<?= $tweet["tt_id"] ?>"><i class="icon icon--reply"></i></a>
                         <a class="action-link <?= isset($tweet['retweeted']) && $tweet['retweeted'] != 0 ? 'on' : '' ?>" href="http://testing.clickcreacion.com/twitterphp/app/scripts/retweet.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--retweet"></i></p>
                         <a class="action-link <?= isset($tweet['favorited']) && $tweet['favorited'] != 0 ? 'on' : '' ?>" href="http://testing.clickcreacion.com/twitterphp/app/scripts/favourite.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--favorite"></i></a>
                     </div>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Answer</button>
+                        <button type="button" class="btn btn-primary" id="send-form">Answer</button>
                     </div>
                 </form>
             </div>
