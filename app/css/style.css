@@ -94,6 +94,12 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   color: #186105;
   display: inline-block;
   line-height: 20px;
-  width: 20px;
   text-align: center;
+  width: 40px;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.action-link:first-child{
+  padding-left: 0;
 }
