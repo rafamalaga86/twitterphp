@@ -36,8 +36,6 @@ require_once('app/Twitterphp.php');
 
 	}
 
-	var_dump($tweets);
-
 	$result->free_result();
 	$conn->close();
 
@@ -45,5 +43,7 @@ require_once('app/Twitterphp.php');
 
 
 View::make('home', ['tweets' => $tweets]);
+
+	var_dump($tweets);
 
 
