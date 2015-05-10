@@ -34,6 +34,8 @@ About the design and the front-end in general: I would have done something more 
 
 Counters in the twitter icons
 
+The commits name.
+
 
 
 ## Exercise
