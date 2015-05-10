@@ -11,4 +11,4 @@ $response = $request->postRetweet($id);
 
 // header('Location: ' . $_SERVER['HTTP_REFERER']);
 
-var_dump(postRetweet);
+var_dump($response);
