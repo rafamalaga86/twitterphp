@@ -32,7 +32,7 @@ About the POST sent data: I would have make the POST sent data with JS, but it t
 
 About the design and the front-end in general: I would have done something more creative, but without Javascript I was kind of limited.
 
-
+Counters in the twitter icons
 
 
 
