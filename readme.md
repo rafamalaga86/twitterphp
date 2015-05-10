@@ -19,3 +19,5 @@ Tried to used best practices.
 Explain MVC.
 
 Everyone can access the PHP files.
+
+Limitations for not using a Framework.
