@@ -19,6 +19,5 @@ $tweets = $request->queryStatuses();
 
 View::make('home', ['tweets' => $tweets]);
 
-var_dump($tweets);
 
 

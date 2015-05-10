@@ -137,7 +137,7 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
 }
 
 
-.action-link:active{
+.action-link.on{
   color: #ffac33;
 }
 
