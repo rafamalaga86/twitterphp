@@ -30,6 +30,11 @@ Responsive
 
 About the POST sent data: I would have make the POST sent data with JS, but it the Test said only HTML, CSS, PHP and MySQL was valid for the solution, so I didn't use it.
 
+About the design and the front-end in general: I would have done something more creative, but without Javascript I was kind of limited.
+
+
+
+
 
 ## Exercise
 

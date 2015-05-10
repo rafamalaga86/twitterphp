@@ -63,7 +63,7 @@ body {
   color: white;
 }
 
-.navbar-brand{
+.navbar-inverse .navbar-brand{
   color: white;
 }
 
