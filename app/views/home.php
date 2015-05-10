@@ -57,7 +57,6 @@
     <div class="container">
         <!-- /.row -->
 
-        <?php var_dump($tweets); ?>
 
 
         <?php foreach ($tweets as $tweet): ?>
@@ -87,7 +86,6 @@
         <?php endforeach; ?>
 
         <!-- /.row -->
-        <?php var_dump($tweets[0]); ?>
 
 
     </div>

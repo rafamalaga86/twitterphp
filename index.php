@@ -28,7 +28,7 @@ require_once('app/Twitterphp.php');
 
 	$sql = "SELECT * FROM tweets";
 
-	$tweets = $conn->query($sql);
+	$tweets = mysqli_fetch_array($conn->query($sql));
 
 	var_dump($tweets);
 
