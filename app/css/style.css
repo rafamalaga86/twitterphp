@@ -95,11 +95,11 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   display: inline-block;
   line-height: 20px;
   text-align: center;
-  width: 40px;
-  padding: 0 10px;
+  width: 35px;
+  padding: 0 5px;
   font-size: 20px;
 }
 
 .action-link:first-child{
-  padding-left: 0;
+  padding: 0;
 }
