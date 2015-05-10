@@ -10,4 +10,4 @@ $api_connection = new TwitterPHP($settings, $url, $getfield, $requestMethod);
 
 $tweets = $api_connection->getStatuses();
 
-$api_connection->getStatuses($tweets);
+$api_connection->storeStatuses($tweets);
