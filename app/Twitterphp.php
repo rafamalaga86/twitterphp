@@ -175,7 +175,7 @@ class TwitterPHP {
 		    die("Connection failed: " . $conn->connect_error);
 		} else {
 
-			$sql = "UPDATE tweets SET favorited = '1' WHERE id = '$id';";
+			$sql = "UPDATE tweets SET favorited = '1' WHERE tt_id = '$id';";
 
 			$result = $conn->query($sql);
 
@@ -185,7 +185,7 @@ class TwitterPHP {
 
 
 
-		return $result;
+		return $response;
 
 	}
 
@@ -215,14 +215,14 @@ class TwitterPHP {
 		    die("Connection failed: " . $conn->connect_error);
 		} else {
 
-			$sql = "UPDATE tweets SET favorited = '0' WHERE id = '$id';";
+			$sql = "UPDATE tweets SET favorited = '0' WHERE tt_id = '$id';";
 
 			$result = $conn->query($sql);
 
 			$conn->close();
 		}
 
-		return $result;
+		return $response;
 
 	}
 
