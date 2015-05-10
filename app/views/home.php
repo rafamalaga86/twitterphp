@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TwitterPHP</title>
+    <title>eKomi Twitter</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="app/css/bootstrap.min.css" rel="stylesheet">

@@ -7,5 +7,3 @@ $settings = array(
     'consumer_secret' => "h5xp4MKIRv9BT6I4pHFQ5X7ltEdLErtFlN3Gg7zbOZHBJROdOK"
 );
 
-$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-$getfield = '?screen_name=twitterapi&count=10';

@@ -2,26 +2,25 @@
 
 class TwitterPHP {
 
-	private $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-	private $getfield = '?screen_name=twitterapi&count=1';
 	private $settings;
 
-	public function __construct($settings, $url, $getfield){
+	public function __construct($settings){
 		$this->settings = $settings;
-		$this->url = $url;
-		$this->getfield = $getfield;
 	}
 
-	public function getStatuses() {
+	public function getStatuses($number) {
 
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
 
 		$requestMethod = 'GET';
+		$getfield = '?screen_name=twitterapi&count='.$number;
+		$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+
 
 		$twitter = new TwitterAPIExchange($this->settings);
 
-		$request = $twitter->setGetfield($this->getfield)
-			               ->buildOauth($this->url, $requestMethod)
+		$request = $twitter->setGetfield($getfield)
+			               ->buildOauth($url, $requestMethod)
 			               ->performRequest();
 
 		return json_decode($request, true);
