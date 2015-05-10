@@ -92,7 +92,11 @@ class TwitterPHP {
 				'$retweeted',
 				'$possibly_sensitive',
 				'$lang'
-			)";
+			)
+			
+			ORDER BY created_at DESC
+
+			";
 
 
 			if ($conn->query($sql) === TRUE) {
