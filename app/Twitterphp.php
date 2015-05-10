@@ -55,6 +55,8 @@ class TwitterPHP {
 			endforeach;
 
 			$sql = "INSERT IGNORE INTO tweets (
+				name,
+				screen_name,
 				tt_id, 
 				text,
 				source,
@@ -69,6 +71,8 @@ class TwitterPHP {
 			)
 
 			VALUES (
+				'$user[name]',
+				'$user[screen_name]',
 				'$id_str', 
 				'$text', 
 				'$source',
@@ -95,7 +99,7 @@ class TwitterPHP {
 	}
 
 	public function queryStatuses(){
-		
+
 	}
 
 
