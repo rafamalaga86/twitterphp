@@ -11,6 +11,8 @@ var_dump($id);
 
 echo '<br><br><br>';
 
+var_dump($status);
+
 // $response = $request->postFavouriteOff($id);
 
 
