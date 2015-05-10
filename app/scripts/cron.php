@@ -6,6 +6,6 @@ require_once('../Twitterphp.php');
 
 $api_connection = new TwitterPHP($settings);
 
-$tweets = $api_connection->getStatuses(10);
+$tweets = $api_connection->getStatuses(50);
 
 $api_connection->storeStatuses($tweets);
