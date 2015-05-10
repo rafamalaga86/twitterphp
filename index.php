@@ -11,9 +11,9 @@ require_once('app/config/apidetails.php');
 require_once('app/Twitterphp.php');
 
 
-$app = new TwitterPHP($settings);
+$request = new TwitterPHP($settings);
 
-$tweets = $app->queryStatuses();
+$tweets = $request->queryStatuses();
 
 
 
