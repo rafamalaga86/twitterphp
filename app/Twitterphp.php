@@ -93,9 +93,6 @@ class TwitterPHP {
 				'$possibly_sensitive',
 				'$lang'
 			)
-			
-			ORDER BY created_at DESC
-
 			";
 
 
