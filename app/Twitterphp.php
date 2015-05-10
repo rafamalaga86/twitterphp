@@ -160,7 +160,7 @@ class TwitterPHP {
 
 			$result = $conn->query($sql);
 
-			$result2 = $result->current_field;
+			$result2 = $result->fetch_row();
 
 			echo "Result";
 			var_dump($result);
