@@ -256,8 +256,6 @@ class TwitterPHP {
 		$url = "https://api.twitter.com/1.1/statuses/retweet/$id.json";
 		$requestMethod = 'POST';
 
-		var_dump($url);
-
 		$postfields = [ 'id' => $id ];
 
 		$twitter = new TwitterAPIExchange($this->settings);
@@ -266,7 +264,7 @@ class TwitterPHP {
 							->setPostfields($postfields)
 							->performRequest();
 
- 
+
 
 
 		// Alter the field of favourite in the DB
