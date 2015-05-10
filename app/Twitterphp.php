@@ -109,6 +109,34 @@ class TwitterPHP {
 
 	public function queryStatuses(){
 
+		// Database details
+		require_once('app/config/database.php');
+
+		// Create connection
+		$conn = new mysqli($server, $username, $password, $database);
+
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Connection failed: " . $conn->connect_error);
+		} else {
+			echo "Connection stablished successfully <br><br>";
+		}
+
+
+		$sql = "SELECT * FROM tweets";
+
+		$result = $conn->query($sql);
+
+		for ( $i=0 ; $row = $result->fetch_assoc() ; $i++){
+
+			$tweets[$i] = $row;
+
+		}
+
+		$result->free_result();
+		$conn->close();
+
+		return $tweets;
 	}
 
 
