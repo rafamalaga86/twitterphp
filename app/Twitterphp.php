@@ -205,9 +205,6 @@ class TwitterPHP {
 			$conn->close();
 		}
 
-
-
-
 		return $response;
 
 	}
