@@ -296,8 +296,8 @@ class TwitterPHP {
 		$requestMethod = 'POST';
 
 		$postfields = [
-			'id' => $id,
-			
+			'in_reply_to_status_id' => $in_reply_to_status_id,
+			'status' => $status
 		];
 
 		$twitter = new TwitterAPIExchange($this->settings);
