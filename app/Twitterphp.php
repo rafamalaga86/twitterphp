@@ -163,6 +163,8 @@ class TwitterPHP {
 			$conn->close();
 		}
 
+		echo "ID: $id <br><br> Result: $result";
+
 		return $result;
 	}
 
