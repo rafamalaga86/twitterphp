@@ -167,7 +167,7 @@ class TwitterPHP {
 
 			var_dump($result2);
 
-			$conn->close();
+			$conn->close(); 
 		}
 
 		echo "ID: $id <br><br> Result: $result";
