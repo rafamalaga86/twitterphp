@@ -87,6 +87,7 @@ blockquote.twitter-tweet {
   display: inline-block;
   vertical-align: top;
   padding: 26px 16px;
+  margin: 0;
   max-width: 450px;
   font: 14px/18px Helvetica, Arial, sans-serif;
   color: #000;
