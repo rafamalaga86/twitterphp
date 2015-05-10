@@ -134,6 +134,8 @@ class TwitterPHP {
 
 			if ( ! isset($tweets)){
 				echo "There is no tweets in the DB";
+
+				$tweets = false;
 			}
 
 			return $tweets;

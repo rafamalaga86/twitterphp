@@ -58,7 +58,7 @@
         <!-- /.row -->
 
 
-        <?php foreach ($tweets as $tweet): ?>
+        <?php foreach ( (array)$tweets as $tweet): ?>
 
             <blockquote class="row twitter-tweet">
                 <div class="col-lg-12">
