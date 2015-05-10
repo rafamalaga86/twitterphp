@@ -28,7 +28,8 @@ class TwitterPHP {
 	}
 
 	public function storeStatuses($tweets) {
-		
+
+		// Database details
 		require_once('../config/database.php');
 
 		// Create connection
@@ -92,6 +93,11 @@ class TwitterPHP {
 
 		$conn->close();
 	}
+
+	public function queryStatuses(){
+		
+	}
+
 
 }
 
