@@ -79,6 +79,12 @@ body {
 
 
 
+/****************  MODAL STYLE  ******************/
+.modal-content{
+  border-radius: 0;
+}
+
+
 /****************  TWEETS STYLE  ******************/
 
 
