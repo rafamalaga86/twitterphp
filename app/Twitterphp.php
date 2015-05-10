@@ -165,6 +165,8 @@ class TwitterPHP {
 
 			echo "<br><br>";
 
+			var_dump($result2);
+
 			$conn->close();
 		}
 
