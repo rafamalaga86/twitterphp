@@ -14,6 +14,8 @@ Dependencies are not included in the repository, they should be installed with C
 
 Using twig in templates.
 
+Hacer la documentacion de las fucniones
+
 Tried to used best practices.
 
 Explain MVC.
@@ -33,6 +35,8 @@ Is not secure
 "ORDER by ID DESC LIMIT 50,5"
 
 Tell them where is the cron.php file.
+
+Twitter: @PeterGrahamson /// 01012004
 
 Responsive
 
