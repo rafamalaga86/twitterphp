@@ -30,16 +30,10 @@ For that reason, and due to the lack of Front Controller in the app, the MVC sep
 Other consequence of the lack of Front Controller and due to the need to route towards specific controllers is that the controllers are not classes.
 
 ### About the Database
-I made the structure base on the needs, and also took some more data just in case. I didn't collect the entities from the API REST. I had several options for them, like serialising in JSON and storing, or make a one to many relationship with other Entities table... I needed more information about what was expected from the app.
-
-### About the GIT commit texts
-Sorry for them because they explain little about the commit itself. I normally work in local environment, but I couldn't this time because couldn't use Curl for the API REST. So had to work 100% in the server and I had to do a commit every time I did a change to deploy the app in the server and try it.
-
-### About security
-I followed some good practises but I am not being super strict with it in the app. SQL Injections, CSRF or XSS attacks, etc. I prefer to not trust anybody, just in case the app scale and someone after me take it, change something, and all of the sudden the field in the DB that was filled with tweets from the API REST are filled by our own app. 
+I made the structure base on the need, and also took some more data just in case. I didn't collect the entities from the API REST. I had several options for them, like serialising in JSON and storing, or make a one to many relationship with other Entities table... I needed more information about what was expected from the app.
 
 ### About the features of the app
-It is possible you think there are some features missing, like twitter authentication. I didn't know where shall I have put more attention because I don't know the ultimate purpose the app would have. Neither 100% what you were expecting. Maybe it needed more attention in the client design and the user experience in it? Maybe a more impressive database? Maybe a really strict security? Maybe they are expecting extra features? If you want to see my skills further in any part, do not hesitate to let me know.
+It is possible you think there are some features missing, like twitter authentication. I didn't know where shall I have put more attention because I don't know the ultimate purpose the app would have. Neither 100% what you were expecting. Maybe it needed more attention in the client design and the user experience on it? Maybe a more impressive database? Maybe a really strict security? Maybe they are expecting extra features? If you want to see my skills further in any part, do not hesitate to let me know.
 
 Due to the fact that there is no authentication, the app by default work with a test twitter account, with username of @PeterGrahamson and the password 01012004 .
 
@@ -48,6 +42,13 @@ It is only used in the client browser. I couldn't think in any way of doing the 
 
 ### About the design
 I would love to do something more creative with more time, but I also wanted to keep JS use to the minimum.
+
+
+### About the GIT commit texts
+Sorry for them because they explain little about the commit itself. I normally work in local environment, but I couldn't this time because couldn't use Curl for the API REST. So had to work 100% in the server and I had to do a commit every time I did a change to deploy the app in the server and try it.
+
+### About security
+I followed some good practises but I am not being super strict with it in the app. SQL Injections, CSRF or XSS attacks, etc. I prefer to not trust anybody, just in case the app scale and someone after me take it, change something, and all of the sudden the field in the DB that was filled with tweets from the API REST are filled by our own app. 
 
 
 ### Contact information
