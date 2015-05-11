@@ -67,8 +67,8 @@
                     
                     <div class="action-row">
                         <a class="action-link answer-button" href="#" data-toggle="modal" data-target="#myModal" data-ttid="<?= $tweet["tt_id"] ?>"><i class="icon icon--reply"></i></a>
-                        <a class="action-link <?= isset($tweet['retweeted']) && $tweet['retweeted'] != 0 ? 'on' : '' ?>" href="http://testing.clickcreacion.com/twitterphp/app/controllers/retweet.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--retweet"></i></p>
-                        <a class="action-link <?= isset($tweet['favorited']) && $tweet['favorited'] != 0 ? 'on' : '' ?>" href="http://testing.clickcreacion.com/twitterphp/app/controllers/favourite.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--favorite"></i></a>
+                        <a class="action-link <?= isset($tweet['retweeted']) && $tweet['retweeted'] != 0 ? 'on' : '' ?>" href="<?= $base_url ?>/app/controllers/retweet.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--retweet"></i></p>
+                        <a class="action-link <?= isset($tweet['favorited']) && $tweet['favorited'] != 0 ? 'on' : '' ?>" href="<?= $base_url ?>/app/controllers/favourite.php?id=<?= $tweet["tt_id"] ?>"><i class="icon icon--favorite"></i></a>
                     </div>
 
                 </div>
@@ -86,7 +86,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
-                <form id="answer-tweet-form" method="POST" action="http://testing.clickcreacion.com/twitterphp/app/controllers/answer.php">
+                <form id="answer-tweet-form" method="POST" action="<?= $base_url ?>/app/controllers/answer.php">
                     <div class="modal-body">
                             <textarea maxlength="140" name="status">@<?= $tweet["screen_name"] ?> </textarea>
                             <input class="hidden" id="ttid" name="ttid" value="">
