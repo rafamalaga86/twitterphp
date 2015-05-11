@@ -38,7 +38,7 @@ It is possible you think there are some features missing, like twitter authentic
 Due to the fact that there is no authentication, the app by default work with a test twitter account, with username of @PeterGrahamson and the password 01012004 .
 
 ### About Javascript
-It is only used in the client browser. I couldn't think in any way of doing the front-end part of the answering tweets feature without it. I had to change dynamically the POST data sent with it. And also use the bootstrap js to make the popup text field appear. Otherwise I had to render a textarea with every tweet, everyone with their own POST data, and it would have ruined the design. All the logic is PHP.
+It is only used for User Experience. I couldn't think in any way of doing the front-end part of the answering tweets feature without it. I had to change dynamically the POST data sent with it. And also use the bootstrap js to make the popup text field appear. Otherwise I had to render a textarea with every tweet, everyone with their own POST data, and it would have ruined the design. All the logic is PHP.
 
 ### About the design
 I would love to do something more creative with more time, but I also wanted to keep JS use to the minimum.
