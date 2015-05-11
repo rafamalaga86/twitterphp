@@ -52,6 +52,10 @@ Something more to do:
 	- Add the images
 
 
+twitter account
+
+http://testing.clickcreacion.com/twitterphp/app/scripts/cron.php
+
 
 ## Exercise
 

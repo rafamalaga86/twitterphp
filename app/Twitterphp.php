@@ -120,7 +120,7 @@ class TwitterPHP {
 		    die("Connection failed: " . $conn->connect_error);
 		} else {
 
-			$sql = "SELECT * FROM tweets";
+			$sql = "SELECT * FROM tweets ORDER BY created_at DESC";
 
 			$result = $conn->query($sql);
 
