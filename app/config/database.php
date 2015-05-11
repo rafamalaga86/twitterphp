@@ -1,5 +1,9 @@
 <?php
 
+/**
+* Database details
+*/
+
 $server			= "localhost";
 $database 		= "postizo_twitter";
 $username 		= "postizo_twitter";

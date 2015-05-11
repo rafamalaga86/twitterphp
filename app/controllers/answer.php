@@ -1,5 +1,9 @@
 <?php
 
+/**
+* This script id for status answering
+*/
+
 require_once('../config/apidetails.php');
 require_once('../Twitterphp.php');
 

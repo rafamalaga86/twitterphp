@@ -1,5 +1,10 @@
 <?php
 
+
+/**
+* This script is for retweeting
+*/
+
 require_once('../config/apidetails.php');
 require_once('../Twitterphp.php');
 

@@ -1,5 +1,11 @@
 <?php
 
+/**
+* This class GET and POST using the Twitter API REST and also
+* write and read data from the Database, caching twitters statuses
+*
+*/
+
 class TwitterPHP {
 
 	private $settings;
@@ -8,6 +14,13 @@ class TwitterPHP {
 		$this->settings = $settings;
 	}
 
+	/**
+	*
+	* @param string $scree_name Twitter user
+	* @param int $number Number of twits the function should get from Twitter API REST
+	* @return array multdimensional
+	*
+	*/
 	public function getStatuses($screen_name, $number) {
 
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
@@ -26,6 +39,13 @@ class TwitterPHP {
 		return json_decode($request, true);
 	}
 
+
+	/**
+	*
+	* @param array multidimensional $tweets 
+	* @return bool $success Was the operation successful?
+	*
+	*/
 	public function storeStatuses($tweets) {
 
 		// Database details
@@ -96,6 +116,7 @@ class TwitterPHP {
 
 
 				if ($conn->query($sql) === TRUE) {
+					$success = true;
 				    echo "<br><br>New record created successfully";
 				} else {
 				    echo "<br><br>Error: " . $sql . "<br>" . $conn->error;
@@ -105,9 +126,17 @@ class TwitterPHP {
 
 			$conn->close();
 
+			return $success;
 		}
 	}
 
+
+
+	/**
+	*
+	* @return array multidimensional with the twitter statuses
+	*
+	*/
 	public function queryStatuses() {
 
 		// Database details
@@ -143,6 +172,14 @@ class TwitterPHP {
 		}
 	}
 
+
+
+	/**
+	*
+	* @param string $id the ID of the twitter we want to check if it is favourited
+	* @return bool $result_bool Is it favourite?
+	*
+	*/
 	public function isFavouriteOn($id) {
 
 		// Alter the field of favourite in the DB
@@ -163,12 +200,19 @@ class TwitterPHP {
 			$conn->close();
 		}
 
+		$result_bool = $result == 1 ? true : false;
 
-		return $result;
+		return $result_bool;
 	}
 
 
 
+	/**
+	*
+	* @param string $id the ID of the twitter we want to favourite
+	* @return array multidimensional with the json response
+	*
+	*/
 	public function postFavouriteOn($id) { 
 
 		// Post the favourite to facebook
@@ -184,8 +228,6 @@ class TwitterPHP {
 		$response = $twitter->buildOauth($url, $requestMethod)
 							->setPostfields($postfields)
 							->performRequest();
-
-
 
 
 		// Alter the field of favourite in the DB
@@ -206,10 +248,17 @@ class TwitterPHP {
 			$conn->close();
 		}
 
-		return $response;
-
+		return json_decode($response, true);
 	}
 
+
+
+	/**
+	*
+	* @param string $id the ID of the twitter we want to defavourite
+	* @return array multidimensional with the json response
+	*
+	*/
 	public function postFavouriteOff($id) {
 
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
@@ -243,11 +292,18 @@ class TwitterPHP {
 			$conn->close();
 		}
 
-		return $response;
-
+		return json_decode($response, true);
 	}
 
 
+
+
+	/**
+	*
+	* @param string $id the ID of the twitter we want to retweet
+	* @return array multidimensional with the json response
+	*
+	*/
 	public function postRetweet($id) {
 
 		// Post the favourite to facebook
@@ -285,9 +341,18 @@ class TwitterPHP {
 			$conn->close();
 		}
 
-		return $response;
+		return json_decode($response, true);
 	}
 
+
+
+	/**
+	*
+	* @param string $status the status we want to update as an asnwer
+	* @param string $in_reply_to_status_id the id of the status we want to answer
+	* @return array multidimensional with the json response
+	*
+	*/
 	public function postAnswer($status, $in_reply_to_status_id) {
 		// Post the favourite to facebook
 		require_once('../../vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
@@ -306,7 +371,7 @@ class TwitterPHP {
 							->setPostfields($postfields)
 							->performRequest();
 
-		return $response;
+		return json_decode($response, true);
 	}
 
 }

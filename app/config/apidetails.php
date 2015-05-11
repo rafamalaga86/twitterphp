@@ -1,5 +1,9 @@
 <?php
 
+/**
+* Twitter API REST details
+*/
+
 $settings = array(
     'oauth_access_token' => "3245158443-g91wo4fzT8ywlfOzMuWZkwFcnxx0UZR6SlGFbih",
     'oauth_access_token_secret' => "cyFsBfxlPeJm9T4LF86CKQbvjHQrCmz6fEuOsWpnPtA7A",

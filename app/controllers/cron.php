@@ -1,5 +1,9 @@
 <?php
 
+/**
+* This class is on charge of Views
+*/
+
 // Include details for the app to work
 require_once('../config/apidetails.php');
 require_once('../config/details.php');

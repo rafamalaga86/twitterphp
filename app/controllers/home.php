@@ -1,6 +1,11 @@
 <?php
 
 
+/**
+* This is the home controller
+*/
+
+
 // Include details for the app to work
 require_once('app/config/apidetails.php');
 require_once('app/Twitterphp.php');
