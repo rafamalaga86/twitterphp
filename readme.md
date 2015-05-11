@@ -1,4 +1,4 @@
-## Twitter PHP Client
+# Twitter PHP Client
 
 This is a simple PHP Client.
 
@@ -10,23 +10,25 @@ It is needed to install the dependencies with Composer. All the details can be c
 
 ## Comments.
 
-There is not model, view and controllers folder.
+I did this app without framework because I think it is what was expected and to show that I am framework agnostic. However, I always use a framework, mostly Laravel.
 
-Dependencies are not included in the repository, they should be installed with Composer.
+For that reason, and due to the lack of Front Controller in the app, the MVC separation is not that obvious but it exist.
+	- The views are in the views folder
+	- The controllers are in the controllers folder
+	- The only model is in the app folder (Twitterphp.php)
 
-Using twig in templates.
+Other consecuence of the lack of Front Controller and due to the need to route towards specific controllers is that the controllers are not classes.
+
+
 
 Hacer la documentacion de las fucniones
 
 Tried to used best practices.
 
-Explain MVC.
 
 There is no controll in the form, I am not escaping the form.
 
 Everyone can access the PHP files.
-
-Limitations for not using a Framework.
 
 Serializing JSON
 
@@ -34,7 +36,6 @@ Explain GIT.
 
 Is not secure
 
-"ORDER by ID DESC LIMIT 50,5"
 
 Tell them where is the cron.php file.
 
