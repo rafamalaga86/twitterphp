@@ -2,11 +2,13 @@
 
 This is a simple PHP Client.
 
-## Notes
 
-The packages of Composer are already in the proper folder, so no need to install dependencies.
+## Installation
 
-Comments.
+It is needed to install the dependencies with Composer. All the details can be changed in the php files found in app/config directory.
+
+
+## Comments.
 
 There is not model, view and controllers folder.
 
