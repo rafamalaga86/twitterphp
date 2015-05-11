@@ -88,7 +88,7 @@
                 </div>
                 <form id="answer-tweet-form" method="POST" action="http://testing.clickcreacion.com/twitterphp/app/scripts/answer.php">
                     <div class="modal-body">
-                            <textarea maxlength="140" name="status"></textarea>
+                            <textarea maxlength="140" name="status">@<?= $tweet["screen_name"] ?> </textarea>
                             <input class="hidden" id="ttid" name="ttid" value="">
                     </div>
                     <div class="modal-footer">
